@@ -11,8 +11,6 @@
 [![Personal Website](https://img.shields.io/badge/Personal%20Website-andrewszeto.com-0A66C2?logo=googlechrome&logoColor=white)](https://andrewszeto.com)
 [![Portfolio](https://img.shields.io/badge/Portfolio-portfolio.andrewszeto.com-7C3AED?logo=vercel&logoColor=white)](https://portfolio.andrewszeto.com)
 
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=zkwokleung&layout=donut&hide=ShaderLab,HLSL,ASP&theme=tokyonight)
-
 ### 🧰 Build Stack
 
 **Languages**  
@@ -23,12 +21,13 @@
 ![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white)
 ![Kotlin](https://img.shields.io/badge/Kotlin-7F52FF?logo=kotlin&logoColor=white)
 
-**Frameworks & UI**  
+**Frameworks & Libraries**  
 ![React](https://img.shields.io/badge/React-61DAFB?logo=react&logoColor=black)
 ![Next.js](https://img.shields.io/badge/Next.js-000000?logo=nextdotjs&logoColor=white)
 ![Tailwind CSS](https://img.shields.io/badge/Tailwind%20CSS-06B6D4?logo=tailwindcss&logoColor=white)
 ![Flutter](https://img.shields.io/badge/Flutter-02569B?logo=flutter&logoColor=white)
 ![Laravel](https://img.shields.io/badge/Laravel-FF2D20?logo=laravel&logoColor=white)
+![Express](https://img.shields.io/badge/Express-000000?logo=express&logoColor=white)
 
 **Platforms & Databases**  
 ![Redis](https://img.shields.io/badge/Redis-DC382D?logo=redis&logoColor=white)
@@ -42,3 +41,5 @@
 ![Neovim](https://img.shields.io/badge/Neovim-57A143?logo=neovim&logoColor=white)
 ![VS Code](https://img.shields.io/badge/Visual%20Studio%20Code-007ACC?logo=visualstudiocode&logoColor=white)
 ![Android Studio](https://img.shields.io/badge/Android%20Studio-3DDC84?logo=androidstudio&logoColor=white)
+
+![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=zkwokleung&layout=donut&hide=ShaderLab,HLSL,ASP&theme=tokyonight)
