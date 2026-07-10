@@ -51,7 +51,7 @@
 
     <g class="line l3"><text x="36" y="156"><tspan class="prompt">➜</tspan><tspan class="path">  ~  </tspan><tspan class="cmd">cat profile.json</tspan></text></g>
     <g class="line l4"><text x="36" y="186"><tspan class="punct">{</tspan></text></g>
-    <g class="line l5"><text x="36" y="216"><tspan class="key">  "commits"</tspan><tspan class="punct">   : </tspan><tspan class="num" id="commit_data">4,673</tspan><tspan class="punct">,</tspan></text></g>
+    <g class="line l5"><text x="36" y="216"><tspan class="key">  "commits"</tspan><tspan class="punct">   : </tspan><tspan class="num" id="commit_data">2,841</tspan><tspan class="punct">,</tspan></text></g>
     <g class="line l6"><text x="36" y="246"><tspan class="key">  "stars"</tspan><tspan class="punct">     : </tspan><tspan class="num" id="star_data">20</tspan><tspan class="punct">,</tspan></text></g>
     <g class="line l7"><text x="36" y="276"><tspan class="key">  "repos"</tspan><tspan class="punct">     : </tspan><tspan class="num" id="repo_data">60</tspan><tspan class="punct">,</tspan></text></g>
     <g class="line l8"><text x="36" y="306"><tspan class="key">  "followers"</tspan><tspan class="punct"> : </tspan><tspan class="num" id="follower_data">15</tspan><tspan class="punct">,</tspan></text></g>
