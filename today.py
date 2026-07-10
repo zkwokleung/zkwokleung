@@ -36,31 +36,12 @@ def query(gql, variables):
     return data["data"]
 
 
-def overview():
+def created_at():
     gql = """
-    query($login: String!, $after: String) {
-      user(login: $login) {
-        createdAt
-        followers { totalCount }
-        repositories(first: 100, after: $after, ownerAffiliations: OWNER, isFork: false) {
-          totalCount
-          pageInfo { hasNextPage endCursor }
-          nodes { stargazerCount }
-        }
-      }
+    query($login: String!) {
+      user(login: $login) { createdAt }
     }"""
-    stars, repos, created, followers, after = 0, 0, None, 0, None
-    while True:
-        user = query(gql, {"login": USERNAME, "after": after})["user"]
-        created = user["createdAt"]
-        followers = user["followers"]["totalCount"]
-        page = user["repositories"]
-        repos = page["totalCount"]
-        stars += sum(n["stargazerCount"] for n in page["nodes"])
-        if not page["pageInfo"]["hasNextPage"]:
-            break
-        after = page["pageInfo"]["endCursor"]
-    return created, followers, repos, stars
+    return query(gql, {"login": USERNAME})["user"]["createdAt"]
 
 
 def total_commits(created_at):
@@ -84,16 +65,10 @@ def total_commits(created_at):
     return total
 
 
-def account_age(created_at):
-    start = datetime.datetime.strptime(created_at, "%Y-%m-%dT%H:%M:%SZ")
+def account_years(created):
+    start = datetime.datetime.strptime(created, "%Y-%m-%dT%H:%M:%SZ")
     delta = relativedelta(datetime.datetime.now(datetime.timezone.utc).replace(tzinfo=None), start)
-    parts = []
-    if delta.years:
-        parts.append(f"{delta.years}y")
-    if delta.months:
-        parts.append(f"{delta.months}mo")
-    parts.append(f"{delta.days}d")
-    return " ".join(parts)
+    return f"{delta.years}y"
 
 
 def render(template, mapping):
@@ -101,13 +76,10 @@ def render(template, mapping):
 
 
 def main():
-    created, followers, repos, stars = overview()
+    created = created_at()
     data = {
         "commits": f"{total_commits(created):,}",
-        "stars": f"{stars:,}",
-        "repos": f"{repos:,}",
-        "followers": f"{followers:,}",
-        "age": account_age(created),
+        "years": account_years(created),
     }
     with open("template.svg", encoding="utf-8") as f:
         template = f.read()
