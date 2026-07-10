@@ -8,14 +8,6 @@
   </a>
 </div>
 
-### 💡 Skills
-
-- 🎯 Googling Google
-
-- ⚔️ Arguing with AI
-
-- ❗ You're absolutely right! 💢💢💢
-
 ### 🌐 Around the Web
 
 [![Personal Website](https://img.shields.io/badge/Personal%20Website-andrewszeto.com-0A66C2?logo=googlechrome&logoColor=white)](https://andrewszeto.com)
@@ -51,5 +43,3 @@
 ![Neovim](https://img.shields.io/badge/Neovim-57A143?logo=neovim&logoColor=white)
 ![VS Code](https://img.shields.io/badge/Visual%20Studio%20Code-007ACC?logo=visualstudiocode&logoColor=white)
 ![Android Studio](https://img.shields.io/badge/Android%20Studio-3DDC84?logo=androidstudio&logoColor=white)
-
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=zkwokleung&layout=donut&hide=ShaderLab,HLSL,ASP&theme=tokyonight)
