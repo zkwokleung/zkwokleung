@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="820" height="430" viewBox="0 0 820 430" fill="none" xml:space="preserve" role="img" aria-label="zkwokleung terminal profile card">
+  <style>
+    .win  { fill: {{bg}}; stroke: {{border}}; }
+    .bar  { fill: {{panel}}; }
+    .barline { stroke: {{border}}; }
+    text  { font-family: 'JetBrains Mono','Fira Code','SF Mono',ui-monospace,'Cascadia Code',Menlo,Consolas,monospace; font-size: 17px; }
+    .title { fill: {{titlebar_fg}}; font-size: 14px; }
+    .prompt { fill: {{prompt}}; }
+    .path   { fill: {{path}}; }
+    .cmd    { fill: {{cmd}}; }
+    .out    { fill: {{fg}}; }
+    .accent { fill: {{accent}}; }
+    .key    { fill: {{key}}; }
+    .str    { fill: {{str}}; }
+    .num    { fill: {{num}}; }
+    .punct  { fill: {{punct}}; }
+
+    .line { clip-path: inset(0 101% 0 0); animation: type 0.5s steps(32) forwards; }
+    .l1  { animation-delay: 0.30s; }
+    .l2  { animation-delay: 0.85s; }
+    .l3  { animation-delay: 1.45s; }
+    .l4  { animation-delay: 2.00s; }
+    .l5  { animation-delay: 2.45s; }
+    .l6  { animation-delay: 2.90s; }
+    .l7  { animation-delay: 3.35s; }
+    .l8  { animation-delay: 3.80s; }
+    .l9  { animation-delay: 4.25s; }
+    .l10 { animation-delay: 4.70s; }
+    .l11 { animation-delay: 5.15s; }
+
+    @keyframes type { to { clip-path: inset(0 0 0 0); } }
+
+    .caret { fill: {{caret}}; opacity: 0; animation: blink 1.05s steps(1) 5.6s infinite; }
+    @keyframes blink { 0%,49% { opacity: 1; } 50%,100% { opacity: 0; } }
+
+    .card { opacity: 0; animation: fade 0.5s ease forwards; }
+    @keyframes fade { to { opacity: 1; } }
+  </style>
+
+  <g class="card">
+    <rect class="win" x="8" y="8" width="804" height="414" rx="12" stroke-width="1.5"/>
+    <path class="bar" d="M8 20 a12 12 0 0 1 12 -12 h780 a12 12 0 0 1 12 12 v26 h-804 z"/>
+    <line class="barline" x1="8" y1="46" x2="812" y2="46" stroke-width="1"/>
+    <circle cx="30"  cy="27" r="6" fill="{{dot_red}}"/>
+    <circle cx="50"  cy="27" r="6" fill="{{dot_yellow}}"/>
+    <circle cx="70"  cy="27" r="6" fill="{{dot_green}}"/>
+    <text class="title" x="410" y="32" text-anchor="middle">zkwokleung@github — zsh</text>
+
+    <g class="line l1"><text x="36" y="90"><tspan class="prompt">➜</tspan><tspan class="path">  ~  </tspan><tspan class="cmd">whoami</tspan></text></g>
+    <g class="line l2"><text x="36" y="120"><tspan class="accent">Andrew SZE-TO</tspan><tspan class="out"> · Full-Stack &amp; Game Developer</tspan></text></g>
+
+    <g class="line l3"><text x="36" y="156"><tspan class="prompt">➜</tspan><tspan class="path">  ~  </tspan><tspan class="cmd">cat profile.json</tspan></text></g>
+    <g class="line l4"><text x="36" y="186"><tspan class="punct">{</tspan></text></g>
+    <g class="line l5"><text x="36" y="216"><tspan class="key">  "commits"</tspan><tspan class="punct">   : </tspan><tspan class="num" id="commit_data">{{commits}}</tspan><tspan class="punct">,</tspan></text></g>
+    <g class="line l6"><text x="36" y="246"><tspan class="key">  "stars"</tspan><tspan class="punct">     : </tspan><tspan class="num" id="star_data">{{stars}}</tspan><tspan class="punct">,</tspan></text></g>
+    <g class="line l7"><text x="36" y="276"><tspan class="key">  "repos"</tspan><tspan class="punct">     : </tspan><tspan class="num" id="repo_data">{{repos}}</tspan><tspan class="punct">,</tspan></text></g>
+    <g class="line l8"><text x="36" y="306"><tspan class="key">  "followers"</tspan><tspan class="punct"> : </tspan><tspan class="num" id="follower_data">{{followers}}</tspan><tspan class="punct">,</tspan></text></g>
+    <g class="line l9"><text x="36" y="336"><tspan class="key">  "uptime"</tspan><tspan class="punct">    : </tspan><tspan class="punct">"</tspan><tspan class="str" id="age_data">{{age}}</tspan><tspan class="punct">"</tspan></text></g>
+    <g class="line l10"><text x="36" y="366"><tspan class="punct">}</tspan></text></g>
+
+    <g class="line l11"><text x="36" y="402"><tspan class="prompt">➜</tspan><tspan class="path">  ~  </tspan></text></g>
+    <rect class="caret" x="100" y="388" width="10" height="18" rx="1"/>
+  </g>
+</svg>
