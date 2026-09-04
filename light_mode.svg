@@ -48,7 +48,7 @@
     <text class="title" x="410" y="32" text-anchor="middle">zkwokleung@github — zsh</text>
 
     <g class="line l1"><text x="36" y="90"><tspan class="prompt">➜</tspan><tspan class="path">  ~  </tspan><tspan class="cmd">whoami</tspan></text></g>
-    <g class="line l2"><text x="36" y="120"><tspan class="accent">Andrew SZE-TO</tspan><tspan class="out"> · Full-Stack &amp; Game Developer</tspan><tspan class="punct">  (</tspan><tspan class="num" id="commit_data">3,606</tspan><tspan class="out"> commits · </tspan><tspan class="num" id="age_data">6y</tspan><tspan class="punct">)</tspan></text></g>
+    <g class="line l2"><text x="36" y="120"><tspan class="accent">Andrew SZE-TO</tspan><tspan class="out"> · Full-Stack &amp; Game Developer</tspan><tspan class="punct">  (</tspan><tspan class="num" id="commit_data">3,604</tspan><tspan class="out"> commits · </tspan><tspan class="num" id="age_data">6y</tspan><tspan class="punct">)</tspan></text></g>
 
     <g class="line l3"><text x="36" y="156"><tspan class="prompt">➜</tspan><tspan class="path">  ~  </tspan><tspan class="cmd">cat skills.json</tspan></text></g>
     <g class="line l4"><text y="186"><tspan class="punct" x="36">{</tspan></text></g>
